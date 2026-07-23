@@ -23,7 +23,7 @@ public class SecurityConfig {
 
     private final JwtFilter jwtFilter;
 
-    @Value("${allowed.origins}")
+    @Value("${allowed.origins:http://localhost:4200,http://localhost:4205,https://gamascape.com,https://www.gamascape.com}")
     private List<String> allowedOrigins;
 
     @Bean
